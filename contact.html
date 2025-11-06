@@ -127,8 +127,10 @@
   data-aos-delay="200"
 >
   <!-- Hidden fields for Netlify -->
+ <form name="contact" method="POST" data-netlify="true" class="php-email-form" data-aos="fade-up" data-aos-delay="200">
+  <!-- Netlify needs this hidden field -->
   <input type="hidden" name="form-name" value="contact">
-  <p class="hidden">
+
   <div class="row gy-4">
 
     <div class="col-md-6">
@@ -152,11 +154,15 @@
     </div>
 
     <div class="col-md-12 text-center">
+      <div class="loading">Loading</div>
+      <div class="error-message"></div>
+      <div class="sent-message">Your message has been sent. Thank you!</div>
       <button type="submit">Send Message</button>
     </div>
 
   </div>
 </form>
+
 
           </div><!-- End Contact Form -->
 
