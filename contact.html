@@ -127,47 +127,45 @@
   data-aos-delay="200"
 >
   
- <form 
-  name="contact"
-  method="POST"
-  data-netlify="true"
-  action="/thankyou.html"
->
-  <input type="hidden" name="form-name" value="contact">
+ <div class="col-lg-7">
+  <form 
+    name="contact"
+    method="POST"
+    data-netlify="true"
+    action="/thankyou.html"
+    class="email-form"
+    data-aos="fade-up"
+    data-aos-delay="200"
+  >
+    <input type="hidden" name="form-name" value="contact">
 
-  <div class="row gy-4">
-    <div class="col-md-6">
-      <label for="name-field" class="pb-2">Your Name</label>
-      <input type="text" name="name" id="name-field" class="form-control" required>
-    </div>
-
-    <div class="col-md-6">
-      <label for="email-field" class="pb-2">Your Email</label>
-      <input type="email" name="email" id="email-field" class="form-control" required>
-    </div>
-
-    <div class="col-md-12">
-      <label for="subject-field" class="pb-2">Subject</label>
-      <input type="text" name="subject" id="subject-field" class="form-control" required>
-    </div>
-
-    <div class="col-md-12">
-      <label for="message-field" class="pb-2">Message</label>
-      <textarea name="message" id="message-field" class="form-control" rows="10" required></textarea>
-    </div>
-
-    <div class="col-md-12 text-center">
-      <button type="submit">Send Message</button>
-    </div>
-  </div>
-</form>
-
-          </div><!-- End Contact Form -->
-
-        </div>
-
+    <div class="row gy-4">
+      <div class="col-md-6">
+        <label for="name-field" class="pb-2">Your Name</label>
+        <input type="text" name="name" id="name-field" class="form-control" required>
       </div>
 
+      <div class="col-md-6">
+        <label for="email-field" class="pb-2">Your Email</label>
+        <input type="email" name="email" id="email-field" class="form-control" required>
+      </div>
+
+      <div class="col-md-12">
+        <label for="subject-field" class="pb-2">Subject</label>
+        <input type="text" name="subject" id="subject-field" class="form-control" required>
+      </div>
+
+      <div class="col-md-12">
+        <label for="message-field" class="pb-2">Message</label>
+        <textarea name="message" id="message-field" class="form-control" rows="10" required></textarea>
+      </div>
+
+      <div class="col-md-12 text-center">
+        <button type="submit">Send Message</button>
+      </div>
+    </div>
+  </form>
+</div>
     </section><!-- /Contact Section -->
 
   </main>
@@ -209,10 +207,4 @@
   <script src="assets/js/main.js"></script>
 
 </body>
-     <form name="contact" data-netlify="true" hidden>
-  <input type="text" name="name">
-  <input type="email" name="email">
-  <textarea name="message"></textarea>
-</form>
-
 </html>
