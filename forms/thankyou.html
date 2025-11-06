@@ -1,7 +1,16 @@
 <form 
-  name="contact" 
-  method="POST" 
-  data-netlify="true" 
-  data-netlify-honeypot="bot-field" 
+  name="contact"
+  method="POST"
+  data-netlify="true"
+  data-netlify-honeypot="bot-field"
   action="/thankyou.html"
 >
+  <input type="hidden" name="form-name" value="contact">
+  <p class="hidden">
+    <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+  </p>
+
+  <!-- your inputs here -->
+
+  <button type="submit">Send Message</button>
+</form>
